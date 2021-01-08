@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomakeharjoitus</title>
+    <style>
+        html {
+        background-color: rgb(115, 214, 218);
+        }
+
+        label {
+            font-weight: normal;
+        }
+        legend {
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Lomakeharjoitus</h1>
+       <form id="form1" method="post" action="http://finnberg.net/post.php">
+        <fieldset>
+            <legend>Kirjautuminen:</legend>
+        <p>
+            <label for="nimialue">Nimi</label>
+            <input id="nimialue" type="text" name="nimi" value="Etunimi Sukunimi">
+            <br>
+            <label for="passwd">Salasana</label>
+            <input id="passwd" type="password" name="salasana" value="">
+        </p>
+    <br>
+    </fieldset>
+<fieldset>
+    <legend>Ruoka</legend>
+        <label for="ruoka">Lempiruoka:</label><br>
+    <select id="ruoka" name="Ruoka" multiple="multiple">
+        <option>Lihapullat</option>
+        <option>Pihvi</option>
+        <option>Pasta</option>
+        <option>Kala</option>
+        <option>Joku muu</option>
+    </select>
+    </fieldset>
+    <fieldset>
+        <legend>Asuinpaikka:<br></legend>
+        <label>Valitse:<br></label>
+        <input type="radio" id="asuhel" name="asuinpaikka" value="helsinki">
+        <label for="asuhel">Helsinki</label><br>
+
+        <input type="radio" id="asuesp" name="asuinpaikka" value="espoo">
+        <label for="asuesp">Espoo</label><br>
+
+        <input type="radio" id="asuvan" name="asuinpaikka" value="vantaa">
+        <label for="asuvan">Vantaa</label><br>
+
+        <input type="radio" id="asumuu" name="asuinpaikka" value="muu">
+        <label for="asumuu">Muualla</label>
+    </select>
+</fieldset>
+<fieldset>
+    <legend>Lempiväri</legend>
+        <label for="favcolor">Valitse:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</fieldset>
+<p>
+    <input type="submit" name="Submit" value="Palauta">
+    <input type="reset" name="Submit2" value="Tyhjennys">
+</p>
+
+</form>
+</body>
+
+</html>
